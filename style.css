@@ -1,22 +1,22 @@
 :root {
-    --primary-bg: #090000;
-    --primary-text: white;
+    --primary-bg: #390303;
+    --primary-text: #ffffff;
     --standard-gap: 40px;
 }
 
 body {
     font-family: fantasy;
-    background: var(--primary-bg)
-    color: var(var(--primary-text))
+    background: var(--primary-bg);
+    color: var(--primary-text);
 }
 
 #projects article{
-    background: rgb(103, 11, 16);
+    background: black;
     margin: var(--standard-gap);
 }
 
 nav {
-     background: yellow;
+     background: red;
 }
 
 
