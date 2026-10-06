@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elysium Virnich</title>
+
+    <meta name="description" content="Elysium Virnich 'CSS Style' page for Lab 5.3 Week 5.">
+    <link rel="stylesheet" href="style.css">
+    <title>Elysium Virnich - Lab 5.3</title>
+
 </head>
 <body>
-    <a href="#"> <img src="images/ELV.png" alt="Elysium Virnich"> </a>
     <header>
-        <nav>
+
+        <section id="header">
+            <h1><a href="#" aria-label="Elysium Virnich Home"> <img src="images/ELV.png" alt="Elysium Virnich" width="100"></a> <strong> About Elysium Virnich</strong></h1>
+        </section>
+        <nav id="menu" class="wayfinder">
             <ul>
                 <li><a href="#about">About</a></li> 
                 <li><a href="#projects">Project</a></li>
@@ -17,22 +24,21 @@
         </nav>
     </header>
     <main>
-        <section id="header">
-            <h1><strong> My name is Elysium Virnich</strong></h1>
-        </section>
+    
         <section id="about">
             <h2>About</h2>
-            <p>I am an Information Science <em> Honors</em> Senior at MSU. I work primarly through the <a href="https://mi.msu.edu">MSU Department of Media and Information</a> I also minor in Film Studies and aspire to work in the production or post production aspects of the film industry. </p>
+            <p>I am an Information Science <em> Honors</em> Senior at MSU. I work primarly through the <a href="https://mi.msu.edu"> MSU Department of Media and Information</a>. I also minor in Film Studies and aspire to work in the production or post production aspects of the film industry. A dream role of mine would connect these two majors together as an <strong> Entertainment Reserach Analyst </strong>, which is the study of how humans and users of streaming platforms and production companies can effect the rend and profit based on what is being produced. </p>
         </section>
         <section id="projects">
             <h2> Projects </h2>
             <article> 
                 <h3>CMSE 202 Project - Bird Flocking Simulation</h3>
-                <p> Conclusion Based on our simulations, we can conclude that network theory can explain flocking behaviors. By treating each bird as part of a local network and letting them respond only to neighbors, we were able to recreate realistic flocking patterns. Different parameter choices led to different species-like behaviors, from big flocks to small ones to constantly changing ones. This supports the idea that flocking doesn’t require a leader or complicated communication. Instead it can come from simple local rules spreading through a connected network of birds. However, the network graphs can be more visually cluttered, and don't necessarily improve upon tracking their positions and animating them.</p>
+                <p> Our main question for this project was: Can network theory explain flocking behaviors? We wanted to see if the way birds flock together in real life can be recreated using the ideas from network theory, where each bird is a node and their interactions are edges. We wondered because birds follow rules when they react to their neighbors in real life, can our code replicate this to match different species of birds? To test this we used the Boids model and changed the code to see how different flocking patterns would form. </p>
                 <figure>
-                    <img src="images/proj1.png" alt="Bird Flocking Simulation">
+                    <img src="images/proj1.png" alt="Bird Flocking Simulation" width = 300>
                     <figcaption> Example of the simulation output. </figcaption>
                 </figure>
+                <p> Conclusion Based on our simulations, we can conclude that network theory can explain flocking behaviors. By treating each bird as part of a local network and letting them respond only to neighbors, we were able to recreate realistic flocking patterns. Different parameter choices led to different species-like behaviors, from big flocks to small ones to constantly changing ones. This supports the idea that flocking doesn’t require a leader or complicated communication. Instead it can come from simple local rules spreading through a connected network of birds. However, the network graphs can be more visually cluttered, and don't necessarily improve upon tracking their positions and animating them.</p>
             </article>
             <article> 
                 <h3> FLM 211 - Final Project</h3>
@@ -45,7 +51,8 @@
         <section id="contact">
             <h2> Contact Info </h2>
             <address>
-                <p> virniche@msu.edu </p>
+                <img src="images/elvheadshot-sm.jpg" alt="This is me" width="200">
+                <p> <a href="mailto:virniche@msu.edu"> virniche@msu.edu </a> </p>
             </address>
         </section>
 
