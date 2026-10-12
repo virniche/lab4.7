@@ -1,0 +1,174 @@
+@import url(https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Henny+Penny&display=swap);
+@import url(https://coolors.co/0b0033-370031-832232-dcdcdd-c5c3c6);
+
+
+
+:root {
+    --primary-bg: hwb(2 0% 80%);
+    --card-bg: hsl(345, 90%, 92%);  
+    --accent-primary: #832232;
+    --primary-text: #dcdcdd; 
+    --gold-accent: #d4af37;
+    --standard-gap: 40px;
+}
+
+body {
+    font-family: "Emilys Candy" system-ui;
+    background: var(--primary-bg);
+    color: var(--primary-text);
+}
+
+h1 {
+    font-family: "Emilys Candy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: var(--gold-accent);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 2;
+    text-shadow: 2px 3px 4px rgba(222, 134, 134, 0.8);
+}
+
+ h2 {
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    color: var(--gold-accent);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 2;
+    text-shadow: 2px 3px 4px rgba(43, 27, 79, 0.8);
+ }
+
+ h3, h4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    color: var(--accent-primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 2;
+    text-shadow: 2px 3px 4px rgba(43, 27, 79, 0.8);
+ }
+
+ #about p {
+    font-size: 1.2rem;       
+    line-height: 1.8;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+ p a {
+    color: var(--gold-accent);
+    text-decoration: underline;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.tagline {
+    font-style: italic;
+    color: var(--primary-text);
+    font-size: 1.2rem;
+}
+
+.emilys-candy-regular {
+  font-family: "Emilys Candy", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#projects article{
+    background: black;
+    margin: var(--standard-gap);
+    padding: 5px 5px;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-radius: 12px;
+}
+
+nav {
+    background: var(--accent-primary);
+    padding: 6px 0;  
+    width: 30%; 
+    text-align: center;
+    margin: var(--standard-gap) auto;
+    border: 3px solid var(--gold-accent);
+    border-radius: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    color: var(--primary-text);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: var(--accent-primary);
+    color: var(--primary-bg);
+}
+
+img, video {
+    display: block;      
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    max-width: 100%;
+    align: center;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.7);
+}
+
+
+figcaption {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.95rem;
+    font-style: italic;
+    color: var(--gold-accent);
+}
+
+
+footer {
+    background: #000000;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: var(--standard-gap);
+    border-top: 2px solid var(--gold-accent);
+    font-size: 0.9rem;
+}
+
+#contact {
+    padding: var(--standard-gap);
+    text-align: center;
+    background: rgb(18, 1, 1);
+    text-align: center;
+    margin: var(--standard-gap);
+    padding: 5px 5px;
+    
+}
+
