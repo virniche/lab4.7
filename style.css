@@ -170,7 +170,7 @@ img, video {
 
 img {
     max-width: 100%;
-    align: center;
+    align-items: center;
     height: auto;
     display: block;
     border-radius: 10px;
