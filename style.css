@@ -205,8 +205,9 @@ footer {
     background: rgb(18, 1, 1);
     margin: var(--standard-gap) auto;
     border: 2px solid var(--gold-accent);
-    border-radius: 12px;
-}
+    border-radius: 12px; 
+} 
+/* used copiolet to fix the border and margins for this section */
 
 
 @media (min-width: 600px){
@@ -243,4 +244,26 @@ footer {
     :root {
         --standard-gap: 40px;
     }
+}
+
+@media (min-width: 1200px) {
+    main {
+        width: 90%;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    #projects {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2.5rem;
+    }
+
+    #projects article {
+        padding: 1.5rem;
+    }
+
+    #contact {
+        padding: 1.5rem 2rem;
+    } 
+    /*used chatbot here to add larger devices than what I originally had*/
 }
