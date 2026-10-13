@@ -35,14 +35,6 @@
     gap: var(--standard-gap);
 }
 
-#projects article {
-    background: black;
-    margin: 0;
-    padding: 5px 5px;
-    padding-left: 10px;
-    padding-right: 5px;
-    border-radius: 12px;
-}
 
 @media (min-width: 600px) {
     #projects .articles {

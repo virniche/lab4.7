@@ -28,7 +28,10 @@ h1 {
     letter-spacing: 1px;
     margin-top: 2;
     text-shadow: 2px 3px 4px rgba(222, 134, 134, 0.8);
+    margin: 0 auto;
+    width: 90%;
 }
+
 
  h2 {
     font-family: 'Franklin Gothic Medium', Arial, sans-serif;
@@ -101,9 +104,12 @@ nav {
 }
 
 nav ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
     border-radius: 10px;
 }
 
@@ -114,13 +120,46 @@ nav ul li {
 
 nav ul li a{
     color: var(--primary-text);
-    text-decoration: none;
 }
 
 nav ul li a:hover {
     background-color: var(--accent-primary);
     color: var(--primary-bg);
+    padding: 6px 12px;
+    display: block;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
+
+
+#projects article {
+    background: black;
+    margin: 0;
+    padding: 5px 5px;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-radius: 12px;
+}
+
+#projects .articles {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--standard-gap);
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--standard-gap);
+}
+
+#projects h2{
+    grid-column: span 2 / span 2;
+}
+
+
 
 img, video {
     display: block;      
@@ -165,4 +204,41 @@ footer {
     margin: var(--standard-gap);
     padding: 5px 5px;
     
+}
+
+
+@media (min-width: 600px){
+    nav {
+        width: 0 auto;
+    }
+
+    #about p {
+        max-width: 720px;
+    }
+
+    #projects .articles {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 200px){
+    nav ul {
+        width: 0 auto;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #projects .articles {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1000px) {
+    nav {
+        width: 30%;
+    }
+    :root {
+        --standard-gap: 40px;
+    }
 }
