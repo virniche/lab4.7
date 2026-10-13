@@ -197,13 +197,15 @@ footer {
 }
 
 #contact {
-    padding: var(--standard-gap);
+    width: fit-content;
+    max-width: calc(100% - 2rem);
+    box-sizing: border-box;
+    padding: 1rem 1.5rem;
     text-align: center;
     background: rgb(18, 1, 1);
-    text-align: center;
-    margin: var(--standard-gap);
-    padding: 5px 5px;
-    
+    margin: var(--standard-gap) auto;
+    border: 2px solid var(--gold-accent);
+    border-radius: 12px;
 }
 
 
