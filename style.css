@@ -11,6 +11,7 @@
 
 body {
     font-family: "Emilys Candy" system-ui;
+    font-display: swap;
     background: var(--primary-bg);
     color: var(--primary-text);
 }
@@ -226,7 +227,7 @@ footer {
     }
 }
 
-@media (min-width: 200px){
+@media (min-width: 600px){
     nav ul {
         width: 0 auto;
         flex-direction: row;
