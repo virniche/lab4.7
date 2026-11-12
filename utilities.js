@@ -1,19 +1,31 @@
-function clickOMatic() {
-    alert('Clicked!');
-    } /* - basic form
+document.addEventListener("DOMContentLoaded", () => {
 
-let clickOMatic = function() {
-    alert('Clicked!')
-}; - w/ function expression, set variable to function
+    const   ButtonLD = document.createElement("button");
+    ButtonLD.id = "mode-button";
+    ButtonLD.setAttribute("aria-label", "Button dark and light mode");
+    document.body.appendChild (ButtonLD);
 
-let clickOMatic = () => alert ('Clicked!'); - arrow function, simpler
 
-window.onload = function () {
-    const click = document.getElementById('click');
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme === "light") {
+        document.body.classList.add("light-mode");
+        ButtonLD.textContent = "Dark Mode";
+    } else {
+        ButtonLD.textContent = "Light Mode";
+    }
 
-    click.addEventListener("click", (event) => {
-    clickOMatic();
-    })
-}; */
-
-ScrollReveal().reveal('.site', (delay:1000));
+    ButtonLD.addEventListener("click", () => {
+        document.body.classList.ButtonLD("light-mode");
+        
+        let theme = "dark";
+        if (document.body.classList.contains("light-mode")) {
+            theme = "light";
+            ButtonLD.textContent = "Dark Mode";
+        } else {
+            ButtonLD.textContent = "Light Mode";
+        }
+        
+        localStorage.setItem("theme", theme);
+    });
+    
+})
